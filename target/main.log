@@ -1,0 +1,485 @@
+23:13:14.236 request:
+1 > POST https://restful-booker.herokuapp.com/auth
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 45
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: restful-booker.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_275)
+{"username":"admin","password":"password123"}
+
+23:13:15.385 response time in milliseconds: 1146.31
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 27
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 14 Jan 2021 04:13:16 GMT
+1 < Etag: W/"1b-ZVEM9PtEQzk3LK4xRexoUHhXhKQ"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{
+  "token": "b0d90b075a8ca3f"
+}
+
+
+23:13:15.487 request:
+1 > POST https://restful-booker.herokuapp.com/booking
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 174
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: restful-booker.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_275)
+{"firstname":"Elena","lastname":"Eb","totalprice":100,"depositpaid":true,"bookingdates":{"checkin":"2019-01-01","checkout":"2020-01-01"},"additionalneeds":"Pretty Breakfast"}
+
+23:13:15.938 response time in milliseconds: 448.74
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 14 Jan 2021 04:13:17 GMT
+1 < Etag: W/"c9-otnXkHx/rRd6hJ3pxpPpBSovGyE"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{
+  "bookingid": 11,
+  "booking": {
+    "firstname": "Elena",
+    "lastname": "Eb",
+    "totalprice": 100,
+    "depositpaid": true,
+    "bookingdates": {
+      "checkin": "2019-01-01",
+      "checkout": "2020-01-01"
+    },
+    "additionalneeds": "Pretty Breakfast"
+  }
+}
+
+
+23:13:15.992 request:
+1 > PUT https://restful-booker.herokuapp.com/booking/11
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 167
+1 > Content-Type: application/json; charset=UTF-8
+1 > Cookie: token=b0d90b075a8ca3f
+1 > Host: restful-booker.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_275)
+{"firstname":"Elena","lastname":"Eb","totalprice":100,"depositpaid":true,"bookingdates":{"checkin":"2019-01-01","checkout":"2020-01-01"},"additionalneeds":"Breakfast"}
+
+23:13:16.426 response time in milliseconds: 432.83
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 167
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 14 Jan 2021 04:13:17 GMT
+1 < Etag: W/"a7-PrYT+baOC28wJdtmvvlE8/ABrvU"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{
+  "firstname": "Elena",
+  "lastname": "Eb",
+  "totalprice": 100,
+  "depositpaid": true,
+  "bookingdates": {
+    "checkin": "2019-01-01",
+    "checkout": "2020-01-01"
+  },
+  "additionalneeds": "Breakfast"
+}
+
+
+23:13:17.702 request:
+1 > POST https://restful-booker.herokuapp.com/auth
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 45
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: restful-booker.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_275)
+{"username":"admin","password":"password123"}
+
+23:13:18.128 response time in milliseconds: 426.26
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 27
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 14 Jan 2021 04:13:19 GMT
+1 < Etag: W/"1b-8QVEGU7f7tyknAL67DG6FoMGtqU"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{
+  "token": "7039a5864e03eec"
+}
+
+
+23:13:18.150 request:
+1 > POST https://restful-booker.herokuapp.com/booking
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 174
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: restful-booker.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_275)
+{"firstname":"Elena","lastname":"Eb","totalprice":100,"depositpaid":true,"bookingdates":{"checkin":"2019-01-01","checkout":"2020-01-01"},"additionalneeds":"Pretty Breakfast"}
+
+23:13:18.582 response time in milliseconds: 428.51
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 14 Jan 2021 04:13:19 GMT
+1 < Etag: W/"c9-Y0i7CMXK5OlZJw+Cery+HPReGmo"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{
+  "bookingid": 12,
+  "booking": {
+    "firstname": "Elena",
+    "lastname": "Eb",
+    "totalprice": 100,
+    "depositpaid": true,
+    "bookingdates": {
+      "checkin": "2019-01-01",
+      "checkout": "2020-01-01"
+    },
+    "additionalneeds": "Pretty Breakfast"
+  }
+}
+
+
+23:13:18.591 request:
+1 > PUT https://restful-booker.herokuapp.com/booking/12
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 169
+1 > Content-Type: application/json; charset=UTF-8
+1 > Cookie: token=7039a5864e03eec
+1 > Host: restful-booker.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_275)
+{"firstname":"Elena1","lastname":"Eb1","totalprice":100,"depositpaid":true,"bookingdates":{"checkin":"2019-01-01","checkout":"2020-01-01"},"additionalneeds":"Breakfast"}
+
+23:13:19.025 response time in milliseconds: 432.15
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 169
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 14 Jan 2021 04:13:20 GMT
+1 < Etag: W/"a9-fVfFlviwM3Q0EjH7zuJOuRah4H8"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{
+  "firstname": "Elena1",
+  "lastname": "Eb1",
+  "totalprice": 100,
+  "depositpaid": true,
+  "bookingdates": {
+    "checkin": "2019-01-01",
+    "checkout": "2020-01-01"
+  },
+  "additionalneeds": "Breakfast"
+}
+
+
+23:13:19.089 request:
+1 > POST https://restful-booker.herokuapp.com/auth
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 45
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: restful-booker.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_275)
+{"username":"admin","password":"password123"}
+
+23:13:19.515 response time in milliseconds: 424.98
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 27
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 14 Jan 2021 04:13:20 GMT
+1 < Etag: W/"1b-CbQkhJyorfphv0NOzLv5DcmKvqM"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{
+  "token": "6c251e5966a864b"
+}
+
+
+23:13:19.537 request:
+1 > POST https://restful-booker.herokuapp.com/booking
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 174
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: restful-booker.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_275)
+{"firstname":"Elena","lastname":"Eb","totalprice":100,"depositpaid":true,"bookingdates":{"checkin":"2019-01-01","checkout":"2020-01-01"},"additionalneeds":"Pretty Breakfast"}
+
+23:13:19.967 response time in milliseconds: 428.55
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 14 Jan 2021 04:13:21 GMT
+1 < Etag: W/"c9-dGte2vqujixcxTD3947AI7wsCC4"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{
+  "bookingid": 13,
+  "booking": {
+    "firstname": "Elena",
+    "lastname": "Eb",
+    "totalprice": 100,
+    "depositpaid": true,
+    "bookingdates": {
+      "checkin": "2019-01-01",
+      "checkout": "2020-01-01"
+    },
+    "additionalneeds": "Pretty Breakfast"
+  }
+}
+
+
+23:13:19.975 request:
+1 > PUT https://restful-booker.herokuapp.com/booking/13
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 169
+1 > Content-Type: application/json; charset=UTF-8
+1 > Cookie: token=6c251e5966a864b
+1 > Host: restful-booker.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_275)
+{"firstname":"Elena2","lastname":"Eb2","totalprice":100,"depositpaid":true,"bookingdates":{"checkin":"2019-01-01","checkout":"2020-01-01"},"additionalneeds":"Breakfast"}
+
+23:13:20.399 response time in milliseconds: 423.17
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 169
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 14 Jan 2021 04:13:21 GMT
+1 < Etag: W/"a9-bpae6PlF0soviI0c/uKk0L9s0qM"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{
+  "firstname": "Elena2",
+  "lastname": "Eb2",
+  "totalprice": 100,
+  "depositpaid": true,
+  "bookingdates": {
+    "checkin": "2019-01-01",
+    "checkout": "2020-01-01"
+  },
+  "additionalneeds": "Breakfast"
+}
+
+
+23:13:20.474 request:
+1 > POST https://restful-booker.herokuapp.com/auth
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 45
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: restful-booker.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_275)
+{"username":"admin","password":"password123"}
+
+23:13:20.887 response time in milliseconds: 411.67
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 27
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 14 Jan 2021 04:13:22 GMT
+1 < Etag: W/"1b-U3mf8ts9Wk41Xxm383JOCPm6QOM"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{
+  "token": "0ec26a64e27530e"
+}
+
+
+23:13:20.907 request:
+1 > POST https://restful-booker.herokuapp.com/booking
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 174
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: restful-booker.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_275)
+{"firstname":"Elena","lastname":"Eb","totalprice":100,"depositpaid":true,"bookingdates":{"checkin":"2019-01-01","checkout":"2020-01-01"},"additionalneeds":"Pretty Breakfast"}
+
+23:13:21.329 response time in milliseconds: 422.50
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 14 Jan 2021 04:13:22 GMT
+1 < Etag: W/"c9-JsT9zwQsM3xAkZwSNsJ4C56VgPg"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{
+  "bookingid": 14,
+  "booking": {
+    "firstname": "Elena",
+    "lastname": "Eb",
+    "totalprice": 100,
+    "depositpaid": true,
+    "bookingdates": {
+      "checkin": "2019-01-01",
+      "checkout": "2020-01-01"
+    },
+    "additionalneeds": "Pretty Breakfast"
+  }
+}
+
+
+23:13:21.338 request:
+1 > PUT https://restful-booker.herokuapp.com/booking/14
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 171
+1 > Content-Type: application/json; charset=UTF-8
+1 > Cookie: token=0ec26a64e27530e
+1 > Host: restful-booker.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_275)
+{"firstname":"Elena3","lastname":"Eb3","totalprice":100,"depositpaid":false,"bookingdates":{"checkin":"2019-03-01","checkout":"2020-03-01"},"additionalneeds":"Breakfast3"}
+
+23:13:21.764 response time in milliseconds: 423.92
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 171
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 14 Jan 2021 04:13:23 GMT
+1 < Etag: W/"ab-CbB7DpjsrUnYrMliY4PCBXCgt/E"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{
+  "firstname": "Elena3",
+  "lastname": "Eb3",
+  "totalprice": 100,
+  "depositpaid": false,
+  "bookingdates": {
+    "checkin": "2019-03-01",
+    "checkout": "2020-03-01"
+  },
+  "additionalneeds": "Breakfast3"
+}
+
+
+23:13:21.849 request:
+1 > POST https://restful-booker.herokuapp.com/auth
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 45
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: restful-booker.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_275)
+{"username":"admin","password":"password123"}
+
+23:13:22.283 response time in milliseconds: 433.45
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 27
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 14 Jan 2021 04:13:23 GMT
+1 < Etag: W/"1b-LahcLXAflMOA+CNRYreW148AiXU"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{
+  "token": "2f5ebf640885dbf"
+}
+
+
+23:13:22.302 request:
+1 > POST https://restful-booker.herokuapp.com/booking
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 174
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: restful-booker.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_275)
+{"firstname":"Elena","lastname":"Eb","totalprice":100,"depositpaid":true,"bookingdates":{"checkin":"2019-01-01","checkout":"2020-01-01"},"additionalneeds":"Pretty Breakfast"}
+
+23:13:22.711 response time in milliseconds: 406.99
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 14 Jan 2021 04:13:23 GMT
+1 < Etag: W/"c9-yuxXVEBmN7FoJt08BZHMyWPwfSE"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{
+  "bookingid": 15,
+  "booking": {
+    "firstname": "Elena",
+    "lastname": "Eb",
+    "totalprice": 100,
+    "depositpaid": true,
+    "bookingdates": {
+      "checkin": "2019-01-01",
+      "checkout": "2020-01-01"
+    },
+    "additionalneeds": "Pretty Breakfast"
+  }
+}
+
+
+23:13:22.718 request:
+1 > PUT https://restful-booker.herokuapp.com/booking/15
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 169
+1 > Content-Type: application/json; charset=UTF-8
+1 > Cookie: token=2f5ebf640885dbf
+1 > Host: restful-booker.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_275)
+{"firstname":"Elena4","lastname":"Eb4","totalprice":100,"depositpaid":true,"bookingdates":{"checkin":"2019-01-01","checkout":"2020-01-01"},"additionalneeds":"Breakfast"}
+
+23:13:23.133 response time in milliseconds: 414.47
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 169
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 14 Jan 2021 04:13:24 GMT
+1 < Etag: W/"a9-iDM6rWU4j8lxt0Oii5ebIXkQwYg"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{
+  "firstname": "Elena4",
+  "lastname": "Eb4",
+  "totalprice": 100,
+  "depositpaid": true,
+  "bookingdates": {
+    "checkin": "2019-01-01",
+    "checkout": "2020-01-01"
+  },
+  "additionalneeds": "Breakfast"
+}
+
+

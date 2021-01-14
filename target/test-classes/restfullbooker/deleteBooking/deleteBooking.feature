@@ -1,0 +1,24 @@
+Feature: Delete  Booking
+  Este servicio es utilizado para la
+  eliminacion reserva
+
+  Background:
+    * url baseUrl
+    * header Accept = 'application/json'
+
+  Scenario: Verificar petición correcta de la eliminacion reciba 201
+
+    * def CreateTokenResponse = call read('classpath:common/createToken.feature')
+    * def accessToken = CreateTokenResponse.response.token
+    * def CreateBookingResponse = call read('classpath:common/createBooking.feature')
+    * def bookingId = CreateBookingResponse.response.bookingid
+    Given path '/booking/' + bookingId
+    And cookie token = accessToken
+    When method DELETE
+    Then status 201
+
+
+    Given path '/booking/' + bookingId
+    And header Accept = 'application/json'
+    When method GET
+    Then  status 404
